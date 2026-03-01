@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="600" height="300" fill="#f8fafc" rx="12"/>
+  
+  <!-- 外界刺激 -->
+  <rect x="30" y="120" width="100" height="60" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="80" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#4338ca" font-weight="600">外界刺激</text>
+  
+  <!-- 编码 -->
+  <rect x="180" y="50" width="100" height="60" rx="8" fill="url(#grad1)"/>
+  <text x="230" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="white" font-weight="600">编码</text>
+  
+  <!-- 存储 -->
+  <rect x="180" y="190" width="100" height="60" rx="8" fill="url(#grad1)"/>
+  <text x="230" y="225" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="white" font-weight="600">存储</text>
+  
+  <!-- 提取 -->
+  <rect x="360" y="120" width="100" height="60" rx="8" fill="url(#grad1)"/>
+  <text x="410" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="white" font-weight="600">提取</text>
+  
+  <!-- 神经网络结构改变 -->
+  <rect x="500" y="120" width="80" height="60" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="540" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#92400e">神经网络</text>
+  <text x="540" y="162" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#92400e">结构改变</text>
+  
+  <!-- 箭头 -->
+  <path d="M130 150 L175 80" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M130 150 L175 220" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M280 80 L360 135" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M280 220 L360 165" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M460 150 L500 150" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M540 180 L540 250 L80 250 L80 180" stroke="#f59e0b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6366f1"/>
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="300" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#1e293b" font-weight="700">记忆的信息处理模型</text>
+</svg>

@@ -1,0 +1,130 @@
+/* 全局样式 */
+
+:root {
+  --brand-color: #6366f1;
+}
+
+/* 自定义容器样式 */
+.rspress-doc {
+  max-width: 900px;
+}
+
+/* 首页样式 */
+.hero-title {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 引用块样式 */
+blockquote {
+  border-left: 4px solid var(--brand-color);
+  background: var(--rp-c-bg-soft);
+  padding: 16px 20px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 表格样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--rp-c-divider);
+}
+
+th {
+  background: var(--rp-c-bg-soft);
+  font-weight: 600;
+}
+
+/* 代码块样式 */
+pre {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* 图片样式 */
+img {
+  border-radius: 8px;
+  margin: 16px 0;
+  max-width: 100%;
+}
+
+/* 公众号介绍卡片样式 */
+.wx-card {
+  margin-top: 48px;
+  padding: 24px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #faf5ff 100%);
+  border-radius: 16px;
+  border: 1px solid #e0e7ff;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.wx-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wx-card-content {
+  flex: 1;
+}
+
+.wx-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.wx-card-desc {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.wx-card-name {
+  display: inline-block;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .rspress-doc {
+    padding: 0 16px;
+  }
+  
+  .wx-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* 暗色模式适配 */
+[data-theme="dark"] .wx-card {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+  border-color: #4338ca;
+}
+
+[data-theme="dark"] .wx-card-title {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .wx-card-desc {
+  color: #94a3b8;
+}

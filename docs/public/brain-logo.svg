@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- 小脑图标 -->
+  <circle cx="20" cy="25" r="15" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+  <path fill="none" stroke="url(#logoGrad)" stroke-width="1.5" stroke-linecap="round" d="M12 18c3-3 10-3 13 0s3 10 0 13-10 3-13 0"/>
+  <path fill="none" stroke="url(#logoGrad)" stroke-width="1.5" stroke-linecap="round" d="M15 22c2 3 5 4 8 4"/>
+  <!-- 文字 -->
+  <text x="45" y="32" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#1a1a2e">记忆科学</text>
+</svg>
