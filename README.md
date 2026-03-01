@@ -1,29 +1,97 @@
-# Rspress website
+# 记忆科学学习站点
 
-## Setup
+面向程序员的脑科学、心理学、记忆科学入门学习资料。
 
-Install the dependencies:
+## 📚 内容概览
+
+### 开始学习
+- [记忆是什么](/guide/intro) - 从信息处理模型理解记忆本质
+- [大脑与深度学习](/guide/brain-vs-ai) - 人脑与 AI 的根本差异
+
+### 神经基础
+- 神经元与突触可塑性 - 记忆的物理基础
+- 海马体 - 记忆的中央处理器
+- 分布式存储 - 记忆不在一个地方
+
+### 容量与编码
+- 人脑的容量 - 为什么能记住那么多东西
+- 语义网络与联想 - 编码的艺术
+- 重构性记忆 - 记忆不是录像
+
+### 遗忘机制
+- 艾宾浩斯遗忘曲线 - 遗忘的规律
+- 遗忘的三大理论 - 痕迹衰退、干扰、提取失败
+
+### U型曲线
+- 首因效应与近因效应 - 为什么开头和结尾记得牢
+
+### 进阶讨论
+- 睡眠与记忆巩固
+- 情绪如何增强记忆
+- 为什么创伤记忆难以遗忘
+- 记忆与人工神经网络的类比
+- 记忆的上限
+
+## 🚀 快速开始
+
+### 安装依赖
 
 ```bash
 npm install
 ```
 
-## Get started
-
-Start the dev server:
+### 开发模式
 
 ```bash
 npm run dev
 ```
 
-Build the website for production:
+访问 http://localhost:3000 查看站点。
+
+### 构建生产版本
 
 ```bash
 npm run build
 ```
 
-Preview the production build locally:
+### 预览构建结果
 
 ```bash
 npm run preview
 ```
+
+## 📖 技术栈
+
+- [Rspress](https://rspress.rs/) - 基于 Rspack 的静态站点生成器
+- Markdown + MDX 支持
+- 内置全文搜索
+- 响应式设计，支持暗色模式
+
+## 📁 目录结构
+
+```
+site/
+├── docs/                    # 文档源文件
+│   ├── guide/              # 学习内容
+│   │   ├── intro.md        # 记忆是什么
+│   │   ├── brain-vs-ai.md  # 大脑与深度学习
+│   │   ├── neural-basis/   # 神经基础
+│   │   ├── capacity-encoding/  # 容量与编码
+│   │   ├── forgetting/     # 遗忘机制
+│   │   ├── u-curve/        # U型曲线
+│   │   └── advanced/       # 进阶讨论
+│   ├── public/             # 静态资源
+│   │   ├── images/         # 图片
+│   │   └── wx.jpeg         # 公众号二维码
+│   └── styles/             # 样式文件
+├── rspress.config.ts       # 站点配置
+└── package.json
+```
+
+## 📝 公众号
+
+关注公众号 **华东野老** 获取更多脑科学、心理学、学习方法论相关的深度文章。
+
+---
+
+© 2026 记忆科学学习资料
